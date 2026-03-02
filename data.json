@@ -1,0 +1,201 @@
+{
+  "version": 2,
+  "generated_at": "2026-03-02 07:12:07",
+  "sections": [
+    {
+      "id": "sec-001",
+      "title": "Category A — Product Demo",
+      "category": "Category A",
+      "order": 1
+    },
+    {
+      "id": "sec-002",
+      "title": "Category B — Training & Tutorial",
+      "category": "Category B",
+      "order": 2
+    },
+    {
+      "id": "sec-003",
+      "title": "Category C — Customer & Case Study",
+      "category": "Category C",
+      "order": 3
+    }
+  ],
+  "items": [
+    {
+      "id": "vid-001",
+      "title": "Mist Nex 20L Full Demo",
+      "youtube_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "category": "Category A",
+      "description": "Penerangan penuh tentang spesifikasi dan kelebihan Mist Nex 20L.",
+      "extra_links": [
+        {
+          "label": "Brochure",
+          "url": "https://example.com/brochure-nex20.pdf"
+        }
+      ],
+      "tags": [
+        "mist",
+        "demo",
+        "nex20"
+      ],
+      "created_at": "2026-03-01",
+      "featured": true
+    },
+    {
+      "id": "vid-002",
+      "title": "Mist Tec 50 Overview",
+      "youtube_url": "https://www.youtube.com/watch?v=3JZ_D3ELwOQ",
+      "category": "Category A",
+      "description": "Overview model Mist Tec 50 untuk kawasan luas.",
+      "extra_links": [],
+      "tags": [
+        "mist",
+        "tec50"
+      ],
+      "created_at": "2026-03-01",
+      "featured": false
+    },
+    {
+      "id": "vid-003",
+      "title": "Mist Nex 6L Compact Demo",
+      "youtube_url": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+      "category": "Category A",
+      "description": "Demo model ringan untuk ladang kecil.",
+      "extra_links": [],
+      "tags": [
+        "mist",
+        "nex6"
+      ],
+      "created_at": "2026-03-02",
+      "featured": false
+    },
+    {
+      "id": "vid-004",
+      "title": "Battery Charging Guide",
+      "youtube_url": "https://www.youtube.com/watch?v=l482T0yNkeo",
+      "category": "Category A",
+      "description": "Cara pengecasan bateri dengan selamat dan efisien.",
+      "extra_links": [],
+      "tags": [
+        "battery",
+        "guide"
+      ],
+      "created_at": "2026-03-02",
+      "featured": false
+    },
+    {
+      "id": "vid-005",
+      "title": "Basic Flight Training",
+      "youtube_url": "https://www.youtube.com/watch?v=fJ9rUzIMcZQ",
+      "category": "Category B",
+      "description": "Latihan asas sebelum penerbangan pertama.",
+      "extra_links": [
+        {
+          "label": "Checklist PDF",
+          "url": "https://example.com/checklist.pdf"
+        }
+      ],
+      "tags": [
+        "training",
+        "basic"
+      ],
+      "created_at": "2026-02-28",
+      "featured": true
+    },
+    {
+      "id": "vid-006",
+      "title": "Calibration Tutorial",
+      "youtube_url": "https://www.youtube.com/watch?v=kXYiU_JCYtU",
+      "category": "Category B",
+      "description": "Langkah-langkah kalibrasi sebelum operasi.",
+      "extra_links": [],
+      "tags": [
+        "training",
+        "calibration"
+      ],
+      "created_at": "2026-02-28",
+      "featured": false
+    },
+    {
+      "id": "vid-007",
+      "title": "Spraying Setup Guide",
+      "youtube_url": "https://www.youtube.com/watch?v=RgKAFK5djSk",
+      "category": "Category B",
+      "description": "Panduan setting kadar semburan dan tangki.",
+      "extra_links": [],
+      "tags": [
+        "spraying",
+        "setup"
+      ],
+      "created_at": "2026-03-01",
+      "featured": false
+    },
+    {
+      "id": "vid-008",
+      "title": "Troubleshooting Common Issues",
+      "youtube_url": "https://www.youtube.com/watch?v=YQHsXMglC9A",
+      "category": "Category B",
+      "description": "Penyelesaian masalah biasa ketika operasi.",
+      "extra_links": [],
+      "tags": [
+        "troubleshoot"
+      ],
+      "created_at": "2026-03-01",
+      "featured": false
+    },
+    {
+      "id": "vid-009",
+      "title": "Customer Story — Kedah",
+      "youtube_url": "https://www.youtube.com/watch?v=OPf0YbXqDm0",
+      "category": "Category C",
+      "description": "Pengalaman pesawah menggunakan Mist Drone.",
+      "extra_links": [],
+      "tags": [
+        "customer",
+        "kedah"
+      ],
+      "created_at": "2026-02-25",
+      "featured": true
+    },
+    {
+      "id": "vid-010",
+      "title": "Case Study — 100 Acre Farm",
+      "youtube_url": "https://www.youtube.com/watch?v=CevxZvSJLk8",
+      "category": "Category C",
+      "description": "Analisis penggunaan dron untuk ladang besar.",
+      "extra_links": [],
+      "tags": [
+        "case study"
+      ],
+      "created_at": "2026-02-26",
+      "featured": false
+    },
+    {
+      "id": "vid-011",
+      "title": "Customer Feedback Compilation",
+      "youtube_url": "https://www.youtube.com/watch?v=60ItHLz5WEA",
+      "category": "Category C",
+      "description": "Kompilasi maklum balas pelanggan.",
+      "extra_links": [],
+      "tags": [
+        "feedback"
+      ],
+      "created_at": "2026-02-27",
+      "featured": false
+    },
+    {
+      "id": "vid-012",
+      "title": "Before & After Drone Spraying",
+      "youtube_url": "https://www.youtube.com/watch?v=09R8_2nJtjg",
+      "category": "Category C",
+      "description": "Perbandingan hasil sebelum dan selepas penggunaan dron.",
+      "extra_links": [],
+      "tags": [
+        "comparison"
+      ],
+      "created_at": "2026-03-02",
+      "featured": false
+    }
+  ]
+}

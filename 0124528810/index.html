@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin — JSON Builder</title>
+  <link rel="stylesheet" href="../assets/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="hgroup">
+          <h1>Admin Page — JSON Builder</h1>
+          <p>
+            Manage <b>Sections (Category rows)</b> + <b>Items (video)</b>, kemudian <b>Export</b> jadi <span class="kbd">data.json</span>.
+            <br/>Admin URL: <span class="kbd">/0124528810/</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <button id="exportBtn" class="btn primary">Export data.json</button>
+        <label class="btn ghost" style="display:inline-flex;gap:8px;align-items:center;cursor:pointer">
+          Import JSON
+          <input id="importFile" type="file" accept="application/json" style="display:none" />
+        </label>
+        <button id="loadSampleBtn" class="btn ghost">Load current data.json</button>
+        <button id="clearAllBtn" class="btn danger">Clear All Draft</button>
+      </div>
+    </section>
+
+    <div class="notice">
+      <b>Visit counter (local-only):</b> <span class="kbd" id="visitCount">0</span>
+      <br/>Nota: “real visitor counter” untuk semua orang memerlukan analytics/backend (contoh GA/Plausible). Yang ini kira visit di device/browser anda sahaja.
+    </div>
+
+    <section class="form">
+      <header>
+        <h2>Sections / Category Rows (<span id="sec_mode">New</span>)</h2>
+        <div class="toolbar">
+          <button id="sec_newBtn" class="btn ghost">New Section</button>
+          <button id="sec_saveBtn" class="btn primary">Save Section</button>
+          <button id="sec_deleteBtn" class="btn danger">Delete Section</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="field">
+          <div class="label">Section ID (auto)</div>
+          <input id="sec_id" class="input" readonly />
+          <div class="help">ID auto. Tak perlu ubah.</div>
+        </div>
+
+        <div class="field">
+          <div class="label">Order (nombor kecil = atas)</div>
+          <input id="sec_order" class="input" placeholder="1" />
+          <div class="help">Untuk susun section (row) atas/bawah.</div>
+        </div>
+
+        <div class="field full">
+          <div class="label">Section Title *</div>
+          <input id="sec_title" class="input" placeholder="Contoh: Demo Mist" />
+        </div>
+
+        <div class="field full">
+          <div class="label">Category Key *</div>
+          <input id="sec_category" class="input" placeholder="Contoh: Category A" />
+          <div class="help">Ini yang item akan pilih dalam dropdown category. Pastikan unik.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="table">
+      <header><h2>Sections List (susun guna ↑ ↓)</h2></header>
+      <div id="sec_rows" class="rows"></div>
+    </section>
+
+    <hr class="sep"/>
+
+    <section class="form">
+      <header>
+        <h2>Items / Videos (<span id="item_mode">New</span>)</h2>
+        <div class="toolbar">
+          <button id="newBtn" class="btn ghost">New Item</button>
+          <button id="saveBtn" class="btn primary">Save Item</button>
+          <button id="deleteBtn" class="btn danger">Delete Item</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <div class="field">
+          <div class="label">Item ID (auto)</div>
+          <input id="id" class="input" readonly />
+          <div class="help">ID auto bila save.</div>
+        </div>
+
+        <div class="field">
+          <div class="label">Tarikh (YYYY-MM-DD)</div>
+          <input id="created_at" class="input" placeholder="2026-03-02" />
+        </div>
+
+        <div class="field full">
+          <div class="label">Title *</div>
+          <input id="title" class="input" placeholder="Contoh: Demo Mist Nex 20L" />
+        </div>
+
+        <div class="field full">
+          <div class="label">Category *</div>
+          <select id="category" class="select" style="min-width:100%"></select>
+        </div>
+
+        <div class="field full">
+          <div class="label">YouTube Link (Unlisted) *</div>
+          <input id="youtube_url" class="input" placeholder="https://www.youtube.com/watch?v=..." />
+          <div class="help">Status: <span class="kbd" id="yt_status">-</span></div>
+        </div>
+
+        <div class="field">
+          <div class="label">Tags (comma)</div>
+          <input id="tags" class="input" placeholder="mist, demo, padi" />
+        </div>
+
+        <div class="field" style="align-items:flex-start">
+          <label style="display:flex;gap:10px;align-items:center;margin-top:26px">
+            <input id="featured" type="checkbox" />
+            <span class="label" style="margin:0">Featured</span>
+          </label>
+        </div>
+
+        <div class="field full">
+          <div class="label">Description (popup bawah video)</div>
+          <textarea id="description" class="input" placeholder="Ringkas tapi jelas..."></textarea>
+        </div>
+
+        <div class="field full">
+          <div class="label">Extra Links (1 baris satu link)</div>
+          <textarea id="extra_links" class="input" placeholder="Brochure | https://example.com/brochure.pdf&#10;WhatsApp | https://wa.me/6012..."></textarea>
+          <div class="help">Format: <span class="kbd">Label | URL</span> (atau URL sahaja).</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="table">
+      <header>
+        <h2>Items List</h2>
+        <div class="toolbar">
+          <input id="search" class="input" placeholder="Search..." />
+          <select id="filter_cat" class="select"><option value="">Semua category</option></select>
+          <select id="filter_feat" class="select">
+            <option value="">Semua</option>
+            <option value="featured">Featured sahaja</option>
+          </select>
+          <span id="count" class="badge">0 item</span>
+        </div>
+      </header>
+      <div id="rows" class="rows"></div>
+    </section>
+
+    <div class="notice">
+      Flow: <span class="kbd">/0124528810/ (admin)</span> → Export <span class="kbd">data.json</span> →
+      replace <span class="kbd">/data.json</span> dalam repo → landing <span class="kbd">/</span> auto update.
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="./assets/admin.js"></script>
+</body>
+</html>
