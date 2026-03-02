@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YouTube Gallery</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div class="hgroup">
+          <h1>Video Gallery (YouTube Unlisted)</h1>
+          <p>
+            Landing page baca <span class="kbd">data.json</span> dan papar ikut <b>section/category</b>.
+            Section order ditentukan oleh <span class="kbd">sections[].order</span>.
+          </p>
+        </div>
+      </div>
+
+      <div class="toolbar">
+        <input id="search" class="input" placeholder="Search tajuk / tag / description / category..." />
+        <select id="tagFilter" class="select">
+          <option value="">Semua tag</option>
+        </select>
+        <select id="sort" class="select">
+          <option value="featured">Sort: Featured → Newest</option>
+          <option value="newest">Sort: Newest</option>
+          <option value="title">Sort: Title (A-Z)</option>
+        </select>
+        <span id="count" class="badge">0 video</span>
+      </div>
+    </section>
+
+    <div id="sections"></div>
+
+    <div class="notice">
+      Popup player akan paparkan <b>description</b> dan <b>extra links</b> jika ada.
+    </div>
+  </div>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <div class="modal-top">
+        <p id="modalTitle" class="modal-title">Play</p>
+        <button id="closeModal" class="close">Tutup (Esc)</button>
+      </div>
+      <div id="player" class="player"></div>
+      <div class="modal-body">
+        <p id="modalDesc" class="modal-desc"></p>
+        <div id="modalLinks" class="links"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="./assets/gallery.js"></script>
+</body>
+</html>
