@@ -60,11 +60,25 @@
     });
 
     const sorter = (a,b)=>{
+      const ap = Number(a.priority ?? 9999);
+      const bp = Number(b.priority ?? 9999);
+
+      if(sort === 'priority'){
+        if(ap !== bp) return ap - bp;
+        const af = a.featured ? 1 : 0;
+        const bf = b.featured ? 1 : 0;
+        if(bf !== af) return bf - af;
+        return String(b.created_at||'').localeCompare(String(a.created_at||''));
+      }
+
       if(sort === 'newest') return String(b.created_at||'').localeCompare(String(a.created_at||''));
       if(sort === 'title') return String(a.title||'').localeCompare(String(b.title||''));
+
+      // default: featured → priority → newest
       const af = a.featured ? 1 : 0;
       const bf = b.featured ? 1 : 0;
       if(bf !== af) return bf - af;
+      if(ap !== bp) return ap - bp;
       return String(b.created_at||'').localeCompare(String(a.created_at||''));
     };
 
