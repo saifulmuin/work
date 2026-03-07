@@ -73,6 +73,14 @@ a{color:inherit}
   color: rgba(233,236,255,.95);
 }
 
+
+.intro {
+  text-align: justify;
+  max-width: 800px;
+  line-height: 1.7;
+  margin-top: 1.5rem;
+}
+
 /* Sections */
 .section{margin-top:16px}
 .section-head{
