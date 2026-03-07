@@ -72,11 +72,14 @@ a{color:inherit}
   background: rgba(255,255,255,.06);
   color: rgba(233,236,255,.95);
 }
-
-
+.hero-content {
+  max-width: 900px;   /* matches your layout */
+  margin: 0 auto;     /* center the block */
+  padding: 0 1rem;    /* small side padding for mobile */
+}
 .intro {
   text-align: justify;
-  max-width: 800px;
+  max-width: Auto;
   line-height: 1.7;
   margin-top: 1.5rem;
 }
