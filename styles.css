@@ -80,7 +80,8 @@ a{color:inherit;text-decoration:none}
 }
 
 .hero-content{
-  max-width:65ch;
+  width:100%
+  max-width:none;
 }
 .hgroup h1{
   margin:0;
