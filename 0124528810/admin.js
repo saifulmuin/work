@@ -298,16 +298,27 @@
           <div><strong>${sanitize(it.title || '(untitled)')}</strong></div>
           <div class="pill">${sanitize(it.category || '-')} • P:${sanitize(it.priority ?? '-')} • ${sanitize(it.created_at || '-')}</div>
         </div>
-        <div class="hide-sm">
-          <div class="pill">${ok?'YouTube OK':'Link invalid'}</div>
-          <div class="pill">${it.featured?'⭐ Featured':''}</div>
+      
+        <div class="hide-md">
+          <div class="item-desc">${sanitize(it.description || '-')}</div>
         </div>
-        <div class="hide-md"><div class="pill">${(it.tags||[]).slice(0,4).map(sanitize).join(', ')||'-'}</div></div>
+      
+        <div class="hide-sm">
+          <div class="pill">${ok ? 'YouTube OK' : 'Link invalid'}</div>
+          <div class="pill">${it.featured ? '⭐ Featured' : ''}</div>
+        </div>
+      
+        <div class="hide-lg">
+          <div class="pill">${(it.tags || []).slice(0,4).map(sanitize).join(', ') || '-'}</div>
+        </div>
+      
         <div class="row-actions">
           <button class="btn sm ghost edit">Edit</button>
           <button class="btn sm danger del">Delete</button>
         </div>
       `;
+
+      
       row.querySelector('.edit').addEventListener('click', ()=>setItemForm(it));
       row.querySelector('.del').addEventListener('click', ()=>{
         if(confirm(`Delete "${it.title}"?`)) deleteItem(it.id);
