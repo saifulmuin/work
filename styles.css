@@ -72,7 +72,7 @@ a{
 }
 
 .container{
-  max-width:1280px;
+  max-width:1440px;
   margin:0 auto;
   padding:0 2rem 2rem;
 }
@@ -229,8 +229,9 @@ body.light .theme-btn{
 
 .row-scroller{
   display:flex;
-  gap:16px;
-  overflow:auto;
+  gap:12px;
+  overflow-x:auto;
+  overflow-y:hidden;
   scroll-snap-type:x mandatory;
   padding:4px 2px 14px;
   scroll-behavior:smooth;
@@ -283,7 +284,7 @@ body.light .theme-btn{
 
 .scroll-btn:hover{
   transform:translateY(-50%) scale(1.05);
-  background:rgba(10,14,28,.98);
+  background:rgba(69,110,255,.98);
 }
 
 .scroll-btn.is-hidden{
@@ -303,7 +304,9 @@ body.light .scroll-btn:hover{
 }
 
 .card{
-  flex:0 0 320px;
+  flex:0 0 calc((100% - 36px) / 4);
+  min-width:260px;
+  max-width:320px;
   min-height:270px;
   scroll-snap-align:start;
   border:1px solid var(--line);
@@ -671,14 +674,28 @@ body.light .help{color:#707070}
 hr.sep{border:0;border-top:1px solid rgba(38,48,88,.8);margin:14px 0}
 body.light hr.sep{border-top:1px solid #ededed}
 
+@media (max-width: 1200px){
+  .card{
+    flex-basis:calc((100% - 24px) / 3);
+  }
+}
+
 @media (max-width: 900px){
   .row{grid-template-columns:1.2fr 1fr auto}
   .row .hide-md{display:none}
+  .card{
+    flex-basis:calc((100% - 12px) / 2);
+    min-width:240px;
+  }
 }
 
 @media (max-width: 640px){
   .container{padding:0 1rem 1.5rem}
-  .card{flex-basis:82vw}
+  .card{
+    flex-basis:82vw;
+    min-width:82vw;
+    max-width:none;
+  }
   .input{min-width:100%}
   .row{grid-template-columns:1fr auto}
   .row .hide-sm{display:none}
