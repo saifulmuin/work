@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-03-16 01:17:00",
+  "generated_at": "2026-04-02 11:36:05",
   "sections": [
     {
       "id": "sec-81052780",
@@ -25,9 +25,92 @@
       "title": "Motion Graphics",
       "category": "Visuals",
       "order": 4
+    },
+    {
+      "id": "sec-bccbd904",
+      "title": "Agriculture Videos",
+      "category": "Agri",
+      "order": 5
     }
   ],
   "items": [
+    {
+      "id": "vid-555a223f",
+      "title": "Short Drone Review",
+      "youtube_url": "https://youtube.com/shorts/A0eBfVoi1Ho?feature=share",
+      "category": "Agri",
+      "description": "Mist Max V2 - 3 in 1 Agri Drone",
+      "extra_links": [],
+      "tags": [],
+      "created_at": "2026-04-02",
+      "priority": 6,
+      "featured": false
+    },
+    {
+      "id": "vid-7fa758ff",
+      "title": "POV Agri-Drone Controls",
+      "youtube_url": "https://youtube.com/shorts/NO2GZ1NPgH4?feature=share",
+      "category": "Agri",
+      "description": "Agriculture Drone controls - POV + Hands on",
+      "extra_links": [],
+      "tags": [],
+      "created_at": "2026-04-02",
+      "priority": 5,
+      "featured": false
+    },
+    {
+      "id": "vid-0a25ef05",
+      "title": "Proof of Concept",
+      "youtube_url": "https://youtu.be/kjtPbHFmSsU",
+      "category": "Agri",
+      "description": "Mist Drone Durian Setup",
+      "extra_links": [],
+      "tags": [],
+      "created_at": "2026-04-02",
+      "priority": 4,
+      "featured": false
+    },
+    {
+      "id": "vid-072eaae5",
+      "title": "Vlog - Agri-Drone Delivery",
+      "youtube_url": "https://youtu.be/MvSz2I0qUL0",
+      "category": "Agri",
+      "description": "Mist Drone Delivery Vlog",
+      "extra_links": [],
+      "tags": [],
+      "created_at": "2026-04-02",
+      "priority": 3,
+      "featured": false
+    },
+    {
+      "id": "vid-7a6c8c71",
+      "title": "9mm TikTok Trend",
+      "youtube_url": "https://youtube.com/shorts/RkVNXFHeu8M?feature=share",
+      "category": "Agri",
+      "description": "Just to follow trend",
+      "extra_links": [],
+      "tags": [],
+      "created_at": "2026-04-02",
+      "priority": 2,
+      "featured": false
+    },
+    {
+      "id": "vid-40615905",
+      "title": "Drone Testimonial",
+      "youtube_url": "https://youtu.be/eLeNSLHjIEM",
+      "category": "Agri",
+      "description": "693K views in TikTok\nRole: Coordinator, Director, Editor",
+      "extra_links": [
+        {
+          "label": "Check on TikTok",
+          "url": "https://www.tiktok.com/@mist_drone/video/7303142650759220487"
+        }
+      ],
+      "tags": [],
+      "created_at": "2026-04-02",
+      "priority": 9999,
+      "featured": false
+    },
     {
       "id": "vid-a5c67c02",
       "title": "Montage Perasmian - Menteri Besar Kedah",
