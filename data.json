@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-04-02 11:49:11",
+  "generated_at": "2026-04-02 11:54:33",
   "sections": [
     {
       "id": "sec-81052780",
@@ -44,18 +44,6 @@
       "tags": [],
       "created_at": "2026-04-02",
       "priority": 9999,
-      "featured": false
-    },
-    {
-      "id": "vid-83a50e92",
-      "title": "Problem Solution Video",
-      "youtube_url": "https://youtube.com/shorts/99ArxeQGgpM",
-      "category": "Agri",
-      "description": "",
-      "extra_links": [],
-      "tags": [],
-      "created_at": "2026-04-02",
-      "priority": 2,
       "featured": false
     },
     {
