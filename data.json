@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-04-02 11:54:33",
+  "generated_at": "2026-04-02 11:59:48",
   "sections": [
     {
       "id": "sec-81052780",
@@ -28,12 +28,24 @@
     },
     {
       "id": "sec-bccbd904",
-      "title": "Agriculture Videos",
+      "title": "Selected Agriculture Videos",
       "category": "Agri",
       "order": 5
     }
   ],
   "items": [
+    {
+      "id": "vid-2a7d8674",
+      "title": "Installment Ads",
+      "youtube_url": "https://youtube.com/shorts/o-X0oM_NwNo?feature=share",
+      "category": "Agri",
+      "description": "Financial Facility Ads - Aonic Flex Aon Agro Explained",
+      "extra_links": [],
+      "tags": [],
+      "created_at": "2026-04-02",
+      "priority": 9999,
+      "featured": false
+    },
     {
       "id": "vid-f6b3eaff",
       "title": "News & Quick Interview",
