@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-04-02 11:36:05",
+  "generated_at": "2026-04-02 11:46:47",
   "sections": [
     {
       "id": "sec-81052780",
@@ -34,6 +34,42 @@
     }
   ],
   "items": [
+    {
+      "id": "vid-f6b3eaff",
+      "title": "News & Quick Interview",
+      "youtube_url": "https://youtube.com/shorts/6hIw_6YKoMY?feature=share",
+      "category": "Agri",
+      "description": "Mist Nex 6 at Cili Plantation",
+      "extra_links": [],
+      "tags": [],
+      "created_at": "2026-04-02",
+      "priority": 9999,
+      "featured": false
+    },
+    {
+      "id": "vid-83a50e92",
+      "title": "Problem Solution Video",
+      "youtube_url": "https://youtube.com/shorts/99ArxeQGgpM",
+      "category": "Agri",
+      "description": "",
+      "extra_links": [],
+      "tags": [],
+      "created_at": "2026-04-02",
+      "priority": 9999,
+      "featured": false
+    },
+    {
+      "id": "vid-0c979869",
+      "title": "Answering Comment",
+      "youtube_url": "https://youtube.com/shorts/JihzdAhcAXY",
+      "category": "Agri",
+      "description": "",
+      "extra_links": [],
+      "tags": [],
+      "created_at": "2026-04-02",
+      "priority": 9999,
+      "featured": false
+    },
     {
       "id": "vid-555a223f",
       "title": "Short Drone Review",
