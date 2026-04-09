@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SM Works</title>
+  <title>Video Portfolio S. Muin</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,18 +13,105 @@
       <div class="hero-content">
         <div class="hgroup">
           <h1>Saiful Muin Zainal</h1>
-          <p class="tagline">012 - 452 8810 | msaifulmuin@gmail.com | linkedin.com/in/saifulmuin | Petaling Jaya, Selangor<br>
-          Skills: Adobe Creative Suites | Basic Programming | Photography | Videography</p>
-          
+      
+          <div class="wrapper">
+            <!-- LEFT BOX -->
+            <div class="box">
+              
+              <p class="tagline">
+                012 - 452 8810 | msaifulmuin@gmail.com | linkedin.com/in/saifulmuin | Petaling Jaya, Selangor<br>
+                
+              </p>
+            </div>
+      
+            <!-- RIGHT BOX -->
+            <div class="box btn-box">
+              <a href="https://saifulmuin.github.io/work-artwork-gallery/" 
+                 target="_blank" 
+                 class="portfolio-btn">
+                Check out my design work
+              </a>
+            </div>
+          </div>
         </div>
+      
         <p class="intro">
           Content and social media professional with hands-on experience in content strategy, video production, and digital audience growth.
           Proven track record in creating high-performing social media content. Skilled in content planning, scripting, directing, editing, and developing content that drives brand visibility, engagement, and lead generation.
-        </p>
+          </p>
       </div>
+      
+      <style>
+      /* LAYOUT */
+      .wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center; /* vertical alignment */
+  justify-content: space-between; /* push left & right apart */
+}
+      
+      .box {
+        flex: 0 0 auto; /* fit content width only */
+        padding: 0px;
+        color: white;
+        border-radius: 10px;
+      }
+      
+      /* BUTTON ALIGNMENT (RIGHT SIDE ON DESKTOP) */
+      .btn-box {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      
+      /* BUTTON STYLE */
+      .portfolio-btn {
+        display: inline-block;
+        padding: 12px 24px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        background: linear-gradient(135deg, #4f46e5, #9333ea);
+        border-radius: 999px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      
+      .portfolio-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      }
+      
+      /* MOBILE RESPONSIVE */
+      @media (max-width: 600px) {
+        .wrapper {
+          flex-direction: column; /* stack */
+        }
+      
+        .btn-box {
+          justify-content: center; /* center button */
+        }
+      
+        .portfolio-btn {
+          width: 100%;
+          text-align: center;
+        }
+      }
+      
+      /* OPTIONAL TEXT STYLE */
+      .intro {
+        margin-top: 20px;
+        line-height: 1.6;
+      }
+      </style>
+  
+    
     </header>
 
+
     <div class="toolbar">
+      
      <input id="search" class="input" placeholder="Search tajuk / tag / description / category..." />
       <select id="tagFilter" class="select">
         <option value="">All Tags</option>
@@ -42,7 +129,7 @@
     <main id="sections" class="video-grid"></main>
 
     <footer class="notice">
-      Saiful Muin - 012 452 8810 - msaifulmuin@gmail.com
+      Skills: Adobe Creative Suites | Basic Programming | Photography | Videography
     </footer>
   </div>
 
