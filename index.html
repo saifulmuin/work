@@ -1,181 +1,436 @@
-<!doctype html>
-<html lang="ms">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Video Portfolio S. Muin</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Saiful Muin Zainal | Video Portfolio</title>
+<style>
+:root{
+  --bg:#f7f6f2;
+  --ink:#111111;
+  --muted:#666666;
+  --line:#d8d4ca;
+  --accent:#18bcb4;
+  --accent-dark:#0f8f89;
+  --card:#ffffff;
+  --soft:#efede6;
+  --shadow:0 20px 60px rgba(0,0,0,.08);
+}
+
+.dark{
+  --bg:#080b12;
+  --ink:#f3f4f6;
+  --muted:#9ca3af;
+  --line:#202838;
+  --accent:#35d8cf;
+  --accent-dark:#19aaa2;
+  --card:#0f1522;
+  --soft:#111827;
+  --shadow:0 20px 70px rgba(0,0,0,.35);
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:Inter, Arial, Helvetica, sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  transition:.25s ease;
+}
+
+a{color:inherit;text-decoration:none}
+
+.page{
+  width:min(1180px, calc(100% - 40px));
+  margin:28px auto;
+  border:1px solid var(--line);
+  background:var(--card);
+  box-shadow:var(--shadow);
+}
+
+.nav{
+  position:sticky;
+  top:0;
+  z-index:99;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  padding:22px 34px;
+  border-bottom:1px solid var(--line);
+  background:rgba(255,255,255,.86);
+  backdrop-filter:blur(18px);
+}
+.dark .nav{background:rgba(15,21,34,.82)}
+
+.brand{
+  font-size:18px;
+  line-height:1.05;
+  letter-spacing:-.02em;
+}
+.brand span{display:block;color:var(--muted);font-size:15px;margin-top:4px}
+
+.menu{
+  display:flex;
+  align-items:center;
+  gap:32px;
+  list-style:none;
+  font-size:18px;
+}
+.menu a{position:relative}
+.menu a:after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-8px;
+  width:0;
+  height:2px;
+  background:var(--accent);
+  transition:.25s ease;
+}
+.menu a:hover:after{width:100%}
+
+.theme{
+  border:1px solid var(--line);
+  background:transparent;
+  color:var(--ink);
+  padding:8px 13px;
+  border-radius:999px;
+  cursor:pointer;
+}
+
+.hero{
+  min-height:560px;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:40px;
+  align-items:center;
+  padding:80px 58px;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(24,188,180,.16), transparent 32%),
+    radial-gradient(circle at 90% 10%, rgba(24,188,180,.12), transparent 28%);
+}
+
+.eyebrow{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  padding:8px 13px;
+  border:1px solid var(--line);
+  border-radius:999px;
+  color:var(--muted);
+  font-size:14px;
+  margin-bottom:24px;
+}
+.eyebrow:before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
+
+.hero h1{
+  font-size:clamp(48px, 7vw, 104px);
+  line-height:.9;
+  letter-spacing:-.07em;
+  max-width:780px;
+}
+.hero h1 em{
+  font-style:normal;
+  color:var(--accent);
+}
+.hero p{
+  max-width:660px;
+  margin-top:28px;
+  color:var(--muted);
+  font-size:19px;
+  line-height:1.65;
+}
+
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:48px;
+  padding:0 22px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  font-weight:700;
+  transition:.2s ease;
+}
+.btn.primary{background:var(--ink);color:var(--card);border-color:var(--ink)}
+.btn:hover{transform:translateY(-2px)}
+
+.stat-panel{
+  border:1px solid var(--line);
+  border-radius:34px;
+  padding:28px;
+  background:linear-gradient(180deg, var(--card), var(--soft));
+}
+.stats{display:grid;gap:16px}
+.stat{
+  padding:28px;
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:var(--card);
+}
+.stat strong{display:block;color:var(--accent);font-size:48px;letter-spacing:-.04em}
+.stat span{display:block;color:var(--muted);font-size:16px;margin-top:4px}
+
+.section-title{
+  padding:54px 58px 18px;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:end;
+}
+.section-title h2{font-size:38px;letter-spacing:-.04em}
+.section-title p{color:var(--muted);max-width:430px;line-height:1.5}
+
+.timeline{border-top:1px solid var(--line)}
+.work{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:32px;
+  align-items:center;
+  padding:74px 58px;
+  border-bottom:1px solid var(--line);
+  position:relative;
+  overflow:hidden;
+}
+.work:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:6px;
+  height:100%;
+  background:var(--accent);
+  transform:scaleY(0);
+  transform-origin:top;
+  transition:.35s ease;
+}
+.work:hover:before{transform:scaleY(1)}
+.date{
+  font-size:24px;
+  font-style:italic;
+  color:var(--muted);
+  margin-bottom:16px;
+}
+.role{
+  font-size:clamp(38px,5vw,72px);
+  line-height:.9;
+  letter-spacing:-.06em;
+  color:var(--accent);
+  text-transform:uppercase;
+  font-weight:900;
+}
+.company{
+  margin-top:16px;
+  font-size:22px;
+  font-weight:800;
+  color:var(--muted);
+}
+.badge{
+  display:inline-block;
+  margin-top:18px;
+  padding:9px 13px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  color:var(--muted);
+}
+.work-card{
+  justify-self:end;
+  width:min(100%, 360px);
+  padding:24px;
+  border:1px solid var(--line);
+  border-radius:26px;
+  background:var(--soft);
+}
+.work-card p{color:var(--muted);line-height:1.55;margin-bottom:20px}
+
+.skills{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:12px;
+  padding:34px 58px 58px;
+}
+.skill{
+  border:1px solid var(--line);
+  padding:18px;
+  border-radius:18px;
+  color:var(--muted);
+  background:var(--card);
+}
+.footer{
+  padding:26px 58px;
+  border-top:1px solid var(--line);
+  display:flex;
+  justify-content:space-between;
+  gap:18px;
+  flex-wrap:wrap;
+  color:var(--muted);
+}
+
+.reveal{opacity:0;transform:translateY(26px);transition:.7s ease}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:900px){
+  .page{width:100%;margin:0;border-left:0;border-right:0}
+  .nav{padding:18px;align-items:flex-start}
+  .menu{display:none}
+  .hero,.work{grid-template-columns:1fr;padding:52px 22px}
+  .section-title{padding:42px 22px 16px;display:block}
+  .section-title p{margin-top:10px}
+  .stat-panel{border-radius:24px;padding:16px}
+  .skills{grid-template-columns:1fr 1fr;padding:22px}
+  .footer{padding:22px}
+  .work-card{justify-self:start}
+}
+</style>
 </head>
 <body>
-  <div class="container">
+<div class="page">
+  <nav class="nav">
+    <a class="brand" href="#top">Saiful Muin Zainal<span>Video Editor / Content Creator</span></a>
     
-    <header class="hero">
-      <div class="hero-content">
-        <div class="hgroup">
-          <h1>Saiful Muin Zainal</h1>
-      
-          <div class="wrapper">
-            <!-- LEFT BOX -->
-            <div class="box">
-              
-              <p class="tagline">
-                012 - 452 8810 | msaifulmuin@gmail.com | linkedin.com/in/saifulmuin | Petaling Jaya, Selangor<br>
-                
-              </p>
-            </div>
-      
-            <!-- RIGHT BOX -->
-            <div class="box btn-box">
-              <a href="https://saifulmuin.github.io/work-artwork-gallery/" 
-                 target="_blank" 
-                 class="portfolio-btn">
-                Check out my design work
-              </a>
-            </div>
-          </div>
+    <ul class="menu">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#work">Experience</a></li>
+      <li><a href="video.html?set=full">Videos</a></li>
+      <li><a href="https://saifulmuin.github.io/work-artwork-gallery/" target="_blank">Graphics</a></li>
+      <li><a href="adminSelect.html">Admin</a></li>
+    </ul>
+    
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="reveal">
+        <div class="eyebrow">Portfolio Home</div>  
+        <button class="theme" id="themeToggle">Dark Mode</button>      
+        <h1>Turning Ideas into <em>Clear Stories</em></h1>
+        <p style="text-align: justify;">Video Editor with hands-on experience in producing videos for branding and marketing purposes. Experienced in screenplay writing, directing, editing, and social media management, supported by solid technical knowledge in production equipment. Highly efficient and proficient in computer operations, with strong troubleshooting skills and a fast ability to learn new software, systems, and AI tools.
+        </p>
+        <div class="hero-actions">
+          <a class="btn primary" href="video.html?set=full" target="_blank">View Video Work</a>
+          <a class="btn" href="https://saifulmuin.github.io/work-artwork-gallery/" target="_blank">View Design Work</a>
         </div>
-      
-        <p class="intro">
-          Content and social media professional with hands-on experience in content strategy, video production, and digital audience growth.
-          Proven track record in creating high-performing social media content. Skilled in content planning, scripting, directing, editing, and developing content that drives brand visibility, engagement, and lead generation.
-          </p>
       </div>
-      
-      <style>
-      /* LAYOUT */
-      .wrapper {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-  align-items: center; /* vertical alignment */
-  justify-content: space-between; /* push left & right apart */
-}
-      
-      .box {
-        flex: 0 0 auto; /* fit content width only */
-        padding: 0px;
-        color: white;
-        border-radius: 10px;
-      }
-      
-      /* BUTTON ALIGNMENT (RIGHT SIDE ON DESKTOP) */
-      .btn-box {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-      }
-      
-      /* BUTTON STYLE */
-      .portfolio-btn {
-        display: inline-block;
-        padding: 12px 24px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #fff;
-        background: linear-gradient(135deg, #4f46e5, #9333ea);
-        border-radius: 999px;
-        text-decoration: none;
-        transition: all 0.3s ease;
-      }
-      
-      .portfolio-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-      }
-      
-      /* MOBILE RESPONSIVE */
-      @media (max-width: 600px) {
-        .wrapper {
-          flex-direction: column; /* stack */
-        }
-      
-        .btn-box {
-          justify-content: center; /* center button */
-        }
-      
-        .portfolio-btn {
-          width: 100%;
-          text-align: center;
-        }
-      }
-      
-      /* OPTIONAL TEXT STYLE */
-      .intro {
-        margin-top: 20px;
-        line-height: 1.6;
-      }
-      </style>
-  
-    
-    </header>
 
+      <aside class="stat-panel reveal">
+        <div class="stats">
+          <div class="stat"><strong>303</strong><span>Videos Delivered</span></div>
+          <div class="stat"><strong>5 YRS</strong><span>Experience</span></div>
+          <div class="stat"><strong>209.9M</strong><span>Views Generated</span></div>
+        </div>
+      </aside>
+    </section>
 
-    <div class="toolbar">
-      
-     <input id="search" class="input" placeholder="Search tajuk / tag / description / category..." />
-      <select id="tagFilter" class="select">
-        <option value="">All Tags</option>
-      </select>
-      <select id="sort" class="select">
-        <option value="featured">Sort: Featured → Newest</option>
-        <option value="newest">Sort: Newest</option>
-        <option value="title">Sort: Title (A-Z)</option>
-        <option value="priority">Sort: Priority (Admin)</option>
-      </select>
-      <button id="themeToggle" class="btn theme-btn" type="button" aria-label="Toggle theme">☀️ Light</button>
-      <span id="count" class="badge">0 video</span>
-    </div>
-
-    <main id="sections" class="video-grid"></main>
-
-    <footer class="notice">
-      Skills: Adobe Creative Suites | Basic Programming | Photography | Videography
-    </footer>
-  </div>
-
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modal-card" role="dialog" aria-modal="true">
-      <div class="modal-top">
-        <p id="modalTitle" class="modal-title">Play</p>
-        <button id="closeModal" class="close">Tutup (Esc)</button>
+    <section id="work">
+      <div class="section-title reveal">
+        <h2>Work Experience</h2>
+        <p> </p>
       </div>
-      <div id="player" class="player"></div>
-      <div class="modal-body">
-        <p id="modalDesc" class="modal-desc"></p>
-        <div id="modalLinks" class="links"></div>
+
+      <div class="timeline">
+        <article class="work reveal">
+          <div>
+            <div class="date">Jul 2023 - Apr 2026</div>
+            <h3 class="role">Content Executive</h3>
+            <div class="company">Aonic Sdn Bhd (Drone Technology)</div>
+          </div>
+          <div class="work-card">
+            <p>Social content, agriculture video campaigns, event coverage, product storytelling and lead-driven content execution.</p>
+            <a class="btn primary" href="video.html?set=aonic">See Videos >>></a>
+          </div>
+        </article>
+
+        <article class="work reveal">
+          <div>
+            <div class="date">Feb 2022 - Jun 2023</div>
+            <h3 class="role">Video Editor</h3>
+            <div class="company">Raifili World Sdn Bhd (Textile Company)</div>
+          </div>
+          <div class="work-card">
+            <p>Short-form editing, viral storytelling, social media video production and performance-focused content.</p>
+            <a class="btn primary" href="video.html?set=raifili">See Videos >>></a>
+          </div>
+        </article>
+
+        <article class="work reveal">
+          <div>
+            <div class="date">Aug 2018 - Jul 2020</div>
+            <h3 class="role">Digital Content Management Executive</h3>
+            <div class="company">The New Straits Times Press (Media Company)</div>
+            <span class="badge">Included SL1M Trainee 12 Months</span>
+          </div>
+          <div class="work-card">
+            <p>Education content management, graphic design and video editing</p>
+            <a class="btn primary" href="video.html?set=nstp">See Videos >>></a>
+          </div>
+        </article>
+
+        <article class="work reveal">
+          <div>
+            <div class="date">2017 & Older</div>
+            <h3 class="role">Freelance & Others</h3>
+            <div class="company">Personal Work</div>            
+          </div>
+          <div class="work-card">
+            <p>Freelance, personal content and student assignment</p>
+            <a class="btn primary" href="video.html?set=others">See Videos >>></a>
+          </div>
+        </article>
+
       </div>
-    </div>
-  </div>
+    </section>
 
-  <div id="toast" class="toast"></div>
+    <section>
+      <div class="section-title reveal">
+        <h2>Core Skills</h2>
+        <p>Developed and refined my skills through hands-on experience working on real-world projects with companies.</p>
+      </div>
+      <div class="skills reveal">
+        <div class="skill">Adobe Creative Suite</div>
+        <div class="skill">Videography</div>
+        <div class="skill">Photography</div>
+        <div class="skill">Multimedia Editing</div>
+        <div class="skill">Graphic Design</div>
+        <div class="skill">Content Strategy</div>
+        <div class="skill">Social Media Management</div>
+        <div class="skill">Scripting</div>
+        <div class="skill">Directing</div>
+        <div class="skill">Programming</div>
+        <div class="skill">AI Tools</div>        
+      </div>
+    </section>
+  </main>
 
-  <script src="gallery.js"></script>
-  <script>
-    const themeToggle = document.getElementById("themeToggle");
+  <footer class="footer">
+    <span>012 - 452 8810</span>
+    <span>msaifulmuin@gmail.com</span>
+    <span>Petaling Jaya, Selangor</span>
+  </footer>
+</div>
 
-    function setTheme(mode) {
-      if (mode === "light") {
-        document.body.classList.add("light");
-        themeToggle.textContent = "🌙 Dark";
-        localStorage.setItem("theme", "light");
-      } else {
-        document.body.classList.remove("light");
-        themeToggle.textContent = "☀️ Light";
-        localStorage.setItem("theme", "dark");
-      }
-    }
+<script>
+const root = document.body;
+const btn = document.getElementById('themeToggle');
+const saved = localStorage.getItem('premiumTheme');
+if(saved === 'dark') root.classList.add('dark');
+btn.textContent = root.classList.contains('dark') ? 'Light Mode' : 'Dark Mode';
+btn.addEventListener('click',()=>{
+  root.classList.toggle('dark');
+  const isDark = root.classList.contains('dark');
+  btn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
+  localStorage.setItem('premiumTheme', isDark ? 'dark' : 'light');
+});
 
-    themeToggle.addEventListener("click", () => {
-      const isLight = document.body.classList.contains("light");
-      setTheme(isLight ? "dark" : "light");
-    });
-
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "light" || savedTheme === "dark") {
-      setTheme(savedTheme);
-    } else {
-      setTheme("dark");
-    }
-  </script>
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting) entry.target.classList.add('show');
+  });
+},{threshold:.12});
+reveals.forEach(el=>observer.observe(el));
+</script>
 </body>
 </html>

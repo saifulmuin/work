@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Video Portfolio S. Muin</title>
+  <link rel="stylesheet" href="stylesFlat.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div class="hero-content">
+        <div class="hgroup">
+          <h1 id="pageTitle">Video Portfolio</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="toolbar clean-toolbar">
+      <div class="hidden-filters" aria-hidden="true">
+        <input id="search" class="input" value="" />
+        <select id="tagFilter" class="select"><option value="">All Tags</option></select>
+        <select id="sort" class="select">
+          <option value="priority" selected>Sort: Priority (Admin)</option>
+          <option value="featured">Sort: Featured → Newest</option>
+          <option value="newest">Sort: Newest</option>
+          <option value="title">Sort: Title (A-Z)</option>
+        </select>
+      </div>
+	 
+      <button id="themeToggle" class="btn theme-btn" type="button" aria-label="Toggle theme">☀️ Light</button>
+      <span id="count" class="badge">0 video</span>
+	   <a href="index.html" class="btn">Back to Home</a>
+    </div>
+
+    <main id="sections" class="video-grid"></main>
+
+    <footer class="notice">
+      Skills: Adobe Creative Suites | Basic Programming | Photography | Videography
+    </footer>
+  </div>
+
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-card" role="dialog" aria-modal="true">
+      <div class="modal-top">
+        <p id="modalTitle" class="modal-title">Play</p>
+        <button id="closeModal" class="close">Tutup (Esc)</button>
+      </div>
+      <div id="player" class="player"></div>
+      <div class="modal-body">
+        <p id="modalDesc" class="modal-desc"></p>
+        <div id="modalLinks" class="links"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+  <script src="portfolio.config.js"></script>
+  <script src="gallery.js"></script>
+  <script>
+    const themeToggle = document.getElementById('themeToggle');
+    function setTheme(mode){
+      const light = mode === 'light';
+      document.body.classList.toggle('light', light);
+      themeToggle.textContent = light ? '🌙 Dark' : '☀️ Light';
+      localStorage.setItem('theme', light ? 'light' : 'dark');
+    }
+    themeToggle.addEventListener('click', () => setTheme(document.body.classList.contains('light') ? 'dark' : 'light'));
+    setTheme(localStorage.getItem('theme') || 'dark');
+  </script>
+</body>
+</html>
