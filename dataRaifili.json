@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-05-07 10:58:46",
+  "generated_at": "2026-05-25 15:13:25",
   "sections": [
     {
       "id": "sec-81052780",
@@ -28,6 +28,702 @@
       ],
       "created_at": "2026-03-09",
       "priority": 1,
+      "featured": false
+    },
+    {
+      "id": "vid-49ab2277",
+      "title": "Teaser Srikandi",
+      "youtube_url": "https://youtube.com/shorts/OEOfCaZsspc",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Teaser"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 2,
+      "featured": false
+    },
+    {
+      "id": "vid-3aba223a",
+      "title": "Teaser Kurta Raifili",
+      "youtube_url": "https://youtube.com/shorts/p4tJW96_XGs",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Teaser"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 3,
+      "featured": false
+    },
+    {
+      "id": "vid-f19fb5c4",
+      "title": "Teaser Maleha Baju Kedah",
+      "youtube_url": "https://youtube.com/shorts/-QdHV2yYllw",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Teaser"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 4,
+      "featured": false
+    },
+    {
+      "id": "vid-d946d2ca",
+      "title": "Teaser Kurta",
+      "youtube_url": "https://youtube.com/shorts/fgtC8N7Wmws",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Teaser"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 5,
+      "featured": false
+    },
+    {
+      "id": "vid-47aa26aa",
+      "title": "Teaser Maleha",
+      "youtube_url": "https://youtube.com/shorts/ik0DIp9QXLU",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Teaser"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 6,
+      "featured": false
+    },
+    {
+      "id": "vid-19901270",
+      "title": "Teaser Srikandi",
+      "youtube_url": "https://youtube.com/shorts/i_TqsbQQcTM",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Teaser"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 7,
+      "featured": false
+    },
+    {
+      "id": "vid-68570e25",
+      "title": "Kuntum Kaftan Intro",
+      "youtube_url": "https://youtube.com/shorts/aI_Rn1yoICc",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Intro",
+        "Product Previews"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 8,
+      "featured": false
+    },
+    {
+      "id": "vid-6dabe080",
+      "title": "Noura Blouse Preview",
+      "youtube_url": "https://youtube.com/shorts/Qp9Z_PwyHhY",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Preview"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 9,
+      "featured": false
+    },
+    {
+      "id": "vid-f5dc48a9",
+      "title": "Kain Tenun Lukis Preview",
+      "youtube_url": "https://youtube.com/shorts/JdQXDyxgCpY",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Preview"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 10,
+      "featured": false
+    },
+    {
+      "id": "vid-3addae54",
+      "title": "Maharani Dress Preview",
+      "youtube_url": "https://youtube.com/shorts/XAQD_1BpApo",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Preview"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 11,
+      "featured": false
+    },
+    {
+      "id": "vid-62de36e0",
+      "title": "Preview Baju Kurung Raifili",
+      "youtube_url": "https://youtube.com/shorts/FShDQS5SgOo",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Preview"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 12,
+      "featured": false
+    },
+    {
+      "id": "vid-7b734544",
+      "title": "Preview Jubah dan Melati",
+      "youtube_url": "https://youtube.com/shorts/sEPx7ria0Kc",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Preview"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 13,
+      "featured": false
+    },
+    {
+      "id": "vid-03dca223",
+      "title": "Preview Jubah & Kurta",
+      "youtube_url": "https://youtube.com/shorts/hmGR9eVH6lA",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Preview"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 14,
+      "featured": false
+    },
+    {
+      "id": "vid-d7802e2c",
+      "title": "Maleha Baharu",
+      "youtube_url": "https://youtube.com/shorts/bryONWFUG5A",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Story"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 15,
+      "featured": false
+    },
+    {
+      "id": "vid-abc9ba2d",
+      "title": "Zahara Dress Product Launch",
+      "youtube_url": "https://youtu.be/Iq2QeUTLJNQ",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Launch"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 16,
+      "featured": false
+    },
+    {
+      "id": "vid-e08b0288",
+      "title": "Thea Blouse Official Launch",
+      "youtube_url": "https://youtu.be/h8CM9bB2ltw",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Launch"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 17,
+      "featured": false
+    },
+    {
+      "id": "vid-1bc367c2",
+      "title": "Tiana Kurung Official Launch",
+      "youtube_url": "https://youtu.be/iXrME0mRytI",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Product Launch"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 18,
+      "featured": false
+    },
+    {
+      "id": "vid-099b3a1c",
+      "title": "Kaw Kaw Punya Promo",
+      "youtube_url": "https://youtube.com/shorts/jL8usTQ4VzU",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo",
+        "Motion Graphics"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 19,
+      "featured": false
+    },
+    {
+      "id": "vid-82862b37",
+      "title": "Promo Happy Hour Birthday Special",
+      "youtube_url": "https://youtube.com/shorts/7gVsrgfcGGU",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 20,
+      "featured": false
+    },
+    {
+      "id": "vid-45d28e21",
+      "title": "Promo Gong Cang Kaw Kaw",
+      "youtube_url": "https://youtube.com/shorts/GTuDFxI2PuY",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 21,
+      "featured": false
+    },
+    {
+      "id": "vid-5c9e3723",
+      "title": "Happy Hour Promo",
+      "youtube_url": "https://youtube.com/shorts/9Uin1Hr2JXI",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 22,
+      "featured": false
+    },
+    {
+      "id": "vid-48116057",
+      "title": "Upcoming Promo (Funny Ver)",
+      "youtube_url": "https://youtube.com/shorts/J90NXgcnqkg",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 23,
+      "featured": false
+    },
+    {
+      "id": "vid-49c828e2",
+      "title": "POV: Cari Hadiah Hari Guru",
+      "youtube_url": "https://youtube.com/shorts/NHat7Vw6mjI",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "TT Content"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 24,
+      "featured": false
+    },
+    {
+      "id": "vid-c0c29e7a",
+      "title": "Merdeka Promo",
+      "youtube_url": "https://youtube.com/shorts/AphonJQyHpw",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Story"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 25,
+      "featured": false
+    },
+    {
+      "id": "vid-45d1ae3b",
+      "title": "Merdeka Promo 2",
+      "youtube_url": "https://youtube.com/shorts/2IB7W58mMiI",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Story"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 26,
+      "featured": false
+    },
+    {
+      "id": "vid-0754263f",
+      "title": "Merdeka Promo Shoutout",
+      "youtube_url": "https://youtube.com/shorts/gTAbo4oOQVE",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 27,
+      "featured": false
+    },
+    {
+      "id": "vid-9d874c54",
+      "title": "Merdeka Promo Shoutout 2",
+      "youtube_url": "https://youtube.com/shorts/PHDEv1OWe94",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 28,
+      "featured": false
+    },
+    {
+      "id": "vid-7d137213",
+      "title": "Pay Day Sale Promo",
+      "youtube_url": "https://youtube.com/shorts/5DWH0STJCWw",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 29,
+      "featured": false
+    },
+    {
+      "id": "vid-93ee2c59",
+      "title": "Feedback Kain Batik Raifili",
+      "youtube_url": "https://youtu.be/cDScZQz5R3o",
+      "category": "Raifili",
+      "description": "Datuk Mokhtar Hussain - Ketua Pegawai Eksekutif BERNAMA",
+      "extra_links": [],
+      "tags": [
+        "Interview"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 30,
+      "featured": false
+    },
+    {
+      "id": "vid-acd98850",
+      "title": "Promo Kemeja Arjuna",
+      "youtube_url": "https://youtube.com/shorts/Z9mZBLtyP2k",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo",
+        "Motion Graphics"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 31,
+      "featured": false
+    },
+    {
+      "id": "vid-dd8ec8ba",
+      "title": "Promo Raifili Anniversary",
+      "youtube_url": "https://youtube.com/shorts/UWifjq27AaU",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 32,
+      "featured": false
+    },
+    {
+      "id": "vid-a190937b",
+      "title": "Promo Indra Shirt",
+      "youtube_url": "https://youtube.com/shorts/SUL7jXQeatw",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo",
+        "Motion Graphics"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 33,
+      "featured": false
+    },
+    {
+      "id": "vid-deb12485",
+      "title": "Morning Booster - Syarizal",
+      "youtube_url": "https://youtube.com/shorts/E6d1Pl6gRu4",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Podcast Shorts",
+        "Motion Graphics"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 34,
+      "featured": false
+    },
+    {
+      "id": "vid-ad809dc7",
+      "title": "Tiktok Feeling Raya Raifili Challenge",
+      "youtube_url": "https://youtube.com/shorts/2p9O_nlDl9w",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Campaign Announcement"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 35,
+      "featured": false
+    },
+    {
+      "id": "vid-7ac8b9a3",
+      "title": "How to Pose - Couple",
+      "youtube_url": "https://youtube.com/shorts/1YJLnCvUsBY",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "TT Content"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 36,
+      "featured": false
+    },
+    {
+      "id": "vid-689a7d10",
+      "title": "How to Pose - Pasangan 2 Anak",
+      "youtube_url": "https://youtube.com/shorts/zngrR_9FKqs",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "TT Content"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 37,
+      "featured": false
+    },
+    {
+      "id": "vid-ab31e02e",
+      "title": "Majlis Korban",
+      "youtube_url": "https://youtu.be/GJc5a9t5a-w",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Event Coverage"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 38,
+      "featured": false
+    },
+    {
+      "id": "vid-fc9d5a16",
+      "title": "Harga Sama Rata Promo",
+      "youtube_url": "https://youtube.com/shorts/V076n-c88Og",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo",
+        "Motion Graphics"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 39,
+      "featured": false
+    },
+    {
+      "id": "vid-aaf0b89d",
+      "title": "Partner Circle Meeting Annoucement",
+      "youtube_url": "https://youtu.be/U5uyH_mB4Zk",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Motion Graphics"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 40,
+      "featured": false
+    },
+    {
+      "id": "vid-b10731fe",
+      "title": "Soft Launching 1 Juta Batik Percuma",
+      "youtube_url": "https://youtu.be/7QX5HWJ5_mI",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Launching Montage",
+        "Motion Graphics"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 41,
+      "featured": false
+    },
+    {
+      "id": "vid-62ac5420",
+      "title": "Stage Montage Pelancaran 1 Juta Batik Penjawat Awam",
+      "youtube_url": "https://youtu.be/4k2sRmhr7AM",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Launch Montage",
+        "Motion Graphics"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 42,
+      "featured": false
+    },
+    {
+      "id": "vid-6a41f998",
+      "title": "Ucapan KSN pada Majlis Pelancara 1 Juta Batik Percuma Penjawat Awam",
+      "youtube_url": "https://youtube.com/shorts/poDTrlynULA",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Speech"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 43,
+      "featured": false
+    },
+    {
+      "id": "vid-51481da8",
+      "title": "Promo Hari Batik Penjawat Awam",
+      "youtube_url": "https://youtube.com/shorts/u6_mWxOXy6s",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo",
+        "Motion Graphics"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 44,
+      "featured": false
+    },
+    {
+      "id": "vid-1a14ec7c",
+      "title": "Jom Claim Batik Percuma!",
+      "youtube_url": "https://youtube.com/shorts/4_ztnYYqnjY",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Campaign Shoutout"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 45,
+      "featured": false
+    },
+    {
+      "id": "vid-935a4582",
+      "title": "Jom Claim Batik Percuma V2",
+      "youtube_url": "https://youtube.com/shorts/Xve_PEajuOk",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Campaign Shoutout"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 46,
+      "featured": false
+    },
+    {
+      "id": "vid-e9e984e1",
+      "title": "Jom Claim Batik Percuma ft Puspagomen",
+      "youtube_url": "https://youtube.com/shorts/BqfPF58PSzo",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Campaign Shoutout"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 47,
+      "featured": false
+    },
+    {
+      "id": "vid-9a298b81",
+      "title": "Jom Claim Batik Percuma - Bil Panjang",
+      "youtube_url": "https://youtube.com/shorts/MALRd0mak8M",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Campaign Shoutout"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 48,
+      "featured": false
+    },
+    {
+      "id": "vid-8add0dc3",
+      "title": "Special Thurs Deal",
+      "youtube_url": "https://youtube.com/shorts/0NDxNVqJZKc",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Story"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 49,
+      "featured": false
+    },
+    {
+      "id": "vid-30907fb8",
+      "title": "Raifili Special Thurs Deal",
+      "youtube_url": "https://youtube.com/shorts/FBt4W7YFBHU",
+      "category": "Raifili",
+      "description": "",
+      "extra_links": [],
+      "tags": [
+        "Promo",
+        "Motion Graphics"
+      ],
+      "created_at": "2026-05-25",
+      "priority": 50,
       "featured": false
     }
   ]
